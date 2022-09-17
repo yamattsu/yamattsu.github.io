@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import "main.css";
+
+.header{
+    background-image: linear-gradient(to bottom, var(--color_4), var(--color_5));
+    text-align: center;
+    padding: 10px;
+
+    min-height: 150px;
+}
+
+.header > h1{
+    font-family: var(--extra-font);
+    color: #FFF;
+    font-weight: normal;
+    padding: 20px 3px;
+    font-size: 3.3em;
+    letter-spacing: 3px;
+}
+
+.header > h1:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    transition-duration: .5s;
+}
+
+.header > p{
+    color: rgba(255, 255, 255, 0.875);
+    font-family: var(--default-font);  
+    font-size: 1em;
+    padding: 0px 5px;
+}
+
+.header > h1,p.shadow{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.553);
+}
+
+@media (max-width: 450px) {
+    .menu a{
+        font-size: 0.8em;
+        padding: 0px 50px;
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+
+
+.menu ul, a{
+    list-style: none;
+    font-family: var(--default-font);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.menu a{
+    letter-spacing: 1px;
+    color: #FFF;
+    padding: 5px;
+    margin: 0px 5px;
+}
+
+.menu a:hover{
+    border-radius: 5px;
+    background-color: #30a565; /* <- color_4*/
+    color: black;
+    transition-duration: .2s;
+}
+
