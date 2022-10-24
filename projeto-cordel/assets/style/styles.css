@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/* Sriracha */
+/* Passion One */
+
+:root {
+    --font-title: "Passion One", cursive;
+    --font-text: "Sriracha", cursive;
+    --font-desc: Verdana, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+
+.header {
+    max-height: 450px;
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: black;
+}
+
+.header h1, p, a {
+    color: white;
+    text-decoration: none;
+}
+
+.header > h1 {
+    font-variant: small-caps;
+    font: 8vw var(--font-title)
+}
+
+.header > p, a {
+    margin-top: 10px;
+    font: 1.1em var(--font-desc);
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.main section {
+    padding: 10% 0;
+    padding-left: 30px;
+}
+
+.main section.normal {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.main section.image {
+    background-color: rgb(88, 83, 83);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.209);
+    color: black;
+}
+
+.main section#img1 {
+    background-image: url("../img/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main section#img2 {
+    background-image: url("../img/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main section.image > p {
+    background-color: rgba(9, 9, 9, 0.487);
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+}
+
+.main section > p {
+    color: black;
+    font: 2vw var(--font-text);
+    line-height: 2em;
+    padding-bottom: 1em;
+}
+
+.main div.video {
+    margin: 100px auto;
+
+    width: 650px;
+    height: 320px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(53, 52, 52);
+}
+
+.main div.video > iframe {
+    width: 600px;
+    height: 300px;
+}
+
+.footer {
+    height: 30px;
+    background-color: black;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    font: 1em var(--font-desc);
+    color: white;
+}
