@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    background-color: var(--purple);
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.main section#image {
+    display: block;
+    background: var(--purple) var(--image_path) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 200px;
+    width: 250px;
+}
+
+.main section#form {
+    display: block;
+    background-color: #FFFFFF;
+    width: 250px;
+    padding: 10px;
+}
+
+.main section#form h1 {
+    font: 1.5em var(--title-font);
+}

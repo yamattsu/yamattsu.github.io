@@ -1,0 +1,17 @@
+@import url("media-query.css");
+@import url("mobile-first.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --image_path: url("../img/pattern-building.jpg");
+    --green: #49a09d;
+    --purple: #5f2c82;
+    --title-font: "Montserrat", sans-serif;
+}
