@@ -46,7 +46,7 @@ body {
 }
 
 .main section#form h1 {
-    font: 1.45em var(--default-font);
+    font: 1.6em var(--default-font);
     font-weight: bolder;
     text-align: center;
     padding: 10px;

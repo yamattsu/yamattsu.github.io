@@ -18,13 +18,14 @@
             <form action="#" method="post" autocomplete="on">
                 <div>
                     <label for="ilogin">Email or Username </label>
-                    <input class="input-box" type="email" name="login" id="ilogin" placeholder=
-                    "Email or Username...">
+                    <input class="input-box" type="email" name="login" id="ilogin" 
+                    placeholder="Email or Username..." autocomplete="email" required>
                 </div>
                 <div>
                     <label for="ipassword">Password </label>
                     <input class="input-box" type="password" name="password" id="ipassword"
-                    placeholder="Password">
+                    placeholder="Password" autocomplete="current-password" minlength=
+                    "8" maxlength="50" required>
                 </div>
                 <div>
                     <input id="signin-button" type="submit" value="Sign In">
