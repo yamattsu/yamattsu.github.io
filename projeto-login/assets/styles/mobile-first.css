@@ -2,17 +2,23 @@
 
 body {
     background-color: var(--purple);
-    
+    width: 100vw;
+    height: 100vh;  
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
-    width: 100vw;
-    height: 100vh;
+    width: 400px;
+    height: 850px;
 }
 
 .main section#image {
@@ -20,17 +26,105 @@ body {
     background: var(--purple) var(--image_path) no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 200px;
-    width: 250px;
+    width: 350px;
+    height: 300px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.298);
 }
 
 .main section#form {
     display: block;
     background-color: #FFFFFF;
-    width: 250px;
-    padding: 10px;
+    width: 350px;
+    padding: 15px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.298);
 }
 
 .main section#form h1 {
-    font: 1.5em var(--title-font);
+    font: 1.45em var(--default-font);
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.main section#form form input.input-box {
+    width: 100%;
+    height: 35px;
+    display: block;
+
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid rgba(121, 120, 120, 0.65);
+}
+
+.main section#form form input.input-box:focus {
+    border: 1px solid var(--purple);
+    outline: 2px solid #9c48d440;
+}
+
+.main section#form form label {
+    font: 0.7em var(--default-font);
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+.main section#form form label:hover {
+    cursor: pointer;
+}
+
+.main section#form form input#signin-button {
+    display: block;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    text-align: center;
+
+    background-color: var(--purple);
+    color: #FFFFFF;
+}
+
+.main section#form form input#signin-button:hover {
+    background-color: #783ca0;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.main section#form form input#signup-button {
+    display: block;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    height: 38px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    text-align: center;
+
+    border: 1px solid var(--purple);
+    background-color: #FFFFFF;
+    color: #1a1a1a;
+}
+
+.main section#form form input#signup-button:hover {
+    cursor: pointer;
+    background-color: #783ca0;
+    color: #FFFFFF;
+    transition: background-color .3s;
 }
