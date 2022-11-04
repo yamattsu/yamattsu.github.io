@@ -4,77 +4,74 @@ body {
     background-color: var(--purple);
     width: 100vw;
     height: 100vh;  
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background-color: #FFFFFF;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.327);
+    width: 80vw;
 
-    width: 400px;
-    height: 850px;
+    transform: translate(-50%, -50%);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 .main section#image {
-    display: block;
     background: var(--purple) var(--image_path) no-repeat;
     background-size: cover;
     background-position: center center;
-    width: 350px;
-    height: 300px;
 
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.298);
+    display: block;
+    width: 80vw;
+    height: 300px;
 }
 
 .main section#form {
     display: block;
-    background-color: #FFFFFF;
-    width: 350px;
+    width: 80vw;
     padding: 15px;
-
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.298);
 }
 
 .main section#form h1 {
     font: 1.6em var(--default-font);
     font-weight: bolder;
     text-align: center;
-    padding: 10px;
-    margin-bottom: 20px;
+    color: #323232;
+    margin: 10px;
 }
 
 .main section#form form input.input-box {
+    display: block;
     width: 100%;
     height: 35px;
-    display: block;
-
-    font-size: 0.7em;
+    
     margin-bottom: 10px;
     margin-top: 2px;
     border-radius: 8px;
     padding: 10px;
+
+    font-size: 0.7em;
     border: 1px solid rgba(121, 120, 120, 0.65);
 }
 
 .main section#form form input.input-box:focus {
-    border: 1px solid var(--purple);
-    outline: 2px solid #9c48d440;
+    border: 1px solid var(--green);
+    outline: 2px solid #54b6b360;
+    transition: border .1s, outline .1s;
 }
 
 .main section#form form label {
     font: 0.7em var(--default-font);
     font-weight: 600;
     padding: 5px 0px;
+    color: #323232;
 }
 
 .main section#form form label:hover {
@@ -83,48 +80,48 @@ body {
 
 .main section#form form input#signin-button {
     display: block;
-    border: none;
-    padding: 5px;
     width: 100%;
     height: 38px;
+
+    padding: 5px;
     border-radius: 6px;
     margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: bold;
     text-align: center;
-
-    background-color: var(--purple);
+    background-color: var(--green);
     color: #FFFFFF;
+    border: none;
 }
 
 .main section#form form input#signin-button:hover {
-    background-color: #783ca0;
     cursor: pointer;
+    background-color: #54b6b3;
     transition: background-color .3s;
 }
 
 .main section#form form input#signup-button {
     display: block;
-    border: none;
-    padding: 5px;
     width: 100%;
     height: 38px;
+    
+    padding: 5px;
     border-radius: 6px;
     margin-top: 10px;
     margin-bottom: 10px;
 
+    border: none;
     font-weight: bold;
     text-align: center;
-
-    border: 1px solid var(--purple);
+    border: 1px solid var(--green);
     background-color: #FFFFFF;
-    color: #1a1a1a;
+    color: #323232;
 }
 
 .main section#form form input#signup-button:hover {
-    cursor: pointer;
-    background-color: #783ca0;
     color: #FFFFFF;
-    transition: background-color .3s;
+    cursor: pointer;
+    background-color: #54b6b3;
+    transition: background-color .3s, color .3s;
 }
